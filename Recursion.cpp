@@ -10,4 +10,5 @@ int main(){
     string s;
     cin>>s;
     cout<<f(0,s);
+    cout << "auto push test" << endl;
 }
