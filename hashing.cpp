@@ -16,4 +16,5 @@ int main(){
         cin>>c;
         cout<<hash[c-'a']<<endl;
     }
+    return 0;
 }
