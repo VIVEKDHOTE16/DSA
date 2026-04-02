@@ -19,4 +19,5 @@ int main(){
         cin>>num;
         cout<<mpp[num]<<endl;
     }
+    return 0;
 }
