@@ -1,4 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <unordered_map>
+#include <set>
+#include <unordered_set>
+#include <queue>
+#include <stack>
+#include <cmath>
+#include <cstring>
 using namespace std;
 
 void selectionSort(int arr[], int n) {
