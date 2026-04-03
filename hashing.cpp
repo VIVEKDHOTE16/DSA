@@ -12,7 +12,7 @@ int main(){
     for(int i=0; i<n ; i++){
         cin>>arr[i];
     }
-    unordered_map<int,int> mpp;
+    unordered_map<int,int> mpp; 
     for(int i=0; i<n;i++){
         mpp[arr[i]]++;
     }
