@@ -71,7 +71,6 @@ void merge(vector<int> &arr, int low , int mid , int high){
         arr[i]=temp[i-low];
     }
 }
-
 void mS(vector<int> &arr,int low,int high){
     if(low>=high) return;
     int mid= (low+high)/2;
