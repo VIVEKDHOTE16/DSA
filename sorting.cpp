@@ -51,8 +51,7 @@ void merge(vector<int> &arr, int low , int mid , int high){
         if(arr[left]<=arr[right]){
             temp.push_back(arr[left]);
             left++;
-        }
-        else{
+        }else{
             temp.push_back(arr[right]);
             right++;
         }
@@ -82,10 +81,10 @@ void mS(vector<int> &arr,int low,int high){
 
 
 int main() {
-    vector<int> n;
+    int n;
     cin >> n;
 
-    vector<int> arr[n];
+    vector<int> arr(n);
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
