@@ -49,9 +49,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-
-
-    insetion_sort(arr, n);
+    insertion_sort(arr, n);
 
     for(int i = 0; i < n; i++) {
         cout << arr[i] << " ";
