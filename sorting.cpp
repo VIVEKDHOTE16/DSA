@@ -44,8 +44,8 @@ void insertion_sort( int arr[],int n){
 void merge(vector<int> &arr, int low , int mid , int high){
     vector<int>temp;
 
-    if left=low;
-    right=mid+1;
+    int left=low;
+    int right=mid+1;
 
     while(left<=mid && right<=high){
         if(arr[left]<=arr[right]){
@@ -54,7 +54,7 @@ void merge(vector<int> &arr, int low , int mid , int high){
         }
         else{
             temp.push_back(arr[right]);
-            right++
+            right++;
         }
 
     }
