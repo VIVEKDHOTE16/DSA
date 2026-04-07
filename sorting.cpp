@@ -78,7 +78,7 @@ void mS(vector<int> &arr,int low,int high){
     merge(arr,low,mid,high);
 }
 
-void partion(vector<int> &arr,int low,int high){
+int partition(vector<int> &arr,int low,int high){
     int pivot=arr[low];
     int i=low;
     int j=high;
@@ -87,7 +87,7 @@ void partion(vector<int> &arr,int low,int high){
             i++;
         }
         while(arr[j]>=arr[pivot] && j>= low+1){
-            j++;
+            j--;
         }
         if(i<j) swap(arr[i],arr[j]);
     }
@@ -97,7 +97,7 @@ void partion(vector<int> &arr,int low,int high){
 }
 void qs(vector<int> &arr,int low,int high){
     if(low<high){
-        int pIndex=partion(arr,low,high);
+        int pIndex = partition(arr,low,high);
         qs(arr,low,pIndex-1);
         qs(arr,pIndex+1,high);
     }
