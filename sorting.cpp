@@ -70,6 +70,7 @@ void merge(vector<int> &arr, int low , int mid , int high){
     for(int i=low;i<=high;i++){
         arr[i]=temp[i-low];
     }
+}
 
 void mS(vector<int> &arr,int low,int high){
     if(low>=high) return;
@@ -79,7 +80,7 @@ void mS(vector<int> &arr,int low,int high){
     merge(arr,low,mid,high);
 }
 
-}
+
 
 int main() {
     vector<int> n;
