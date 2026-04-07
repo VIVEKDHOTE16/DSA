@@ -73,8 +73,8 @@ void merge(vector<int> &arr, int low , int mid , int high){
 void mS(vector<int> &arr,int low,int high){
     if(low>=high) return;
     int mid= (low+high)/2;
-    mS=(arr,low,mid);
-    mS=(arr,mid+1,high);
+    mS(arr,low,mid);
+    mS(arr,mid+1,high);
     merge(arr,low,mid,high);
 }
 
