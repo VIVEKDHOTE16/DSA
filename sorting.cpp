@@ -58,9 +58,19 @@ void merge(vector<int> &arr, int low , int mid , int high){
         }
 
     }
+    while(left<=mid){
+        temp.push_back(arr[left]);
+        left++;
+    }
+    while(right<=high){
+        temp.push_back(arr[right]);
+         right++;
+        
+    }  
     for(int i=low;i<=high;i++){
         arr[i]=temp[i-low];
     }
+
 void mS(vector<int> &arr,int low,int high){
     if(low>=high) return;
     int mid= (low+high)/2;
@@ -72,14 +82,14 @@ void mS(vector<int> &arr,int low,int high){
 }
 
 int main() {
-    int n;
+    vector<int> n;
     cin >> n;
 
-    int arr[n];
+    vector<int> arr[n];
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    mS(arr, n); 
+    mS(arr,0,n-1); 
 
     for(int i = 0; i < n; i++) {
         cout << arr[i] << " ";
