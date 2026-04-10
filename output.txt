@@ -1,1 +1,1 @@
-Yes, it is sorted and rotated
+No, it is NOT sorted and rotated

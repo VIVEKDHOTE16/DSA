@@ -118,7 +118,7 @@ bool check(vector<int>& nums) {
  }
 
  int main() {
-    vector<int> nums = {3, 4, 5, 1, 2};  // example input
+    vector<int> nums = {2,1 ,3 ,4 };  // example input
 
     if (check(nums)) {
         cout << "Yes, it is sorted and rotated" << endl;
