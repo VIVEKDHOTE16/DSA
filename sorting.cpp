@@ -103,20 +103,31 @@ void qs(vector<int> &arr,int low,int high){
     }
 }
 
+bool check(vector<int>& nums) {
+    int n=nums.size();
+    int count=0;
 
-int main() {
-    int n;
-    cin >> n;
-
-    vector<int> arr(n);
-    for(int i = 0; i < n; i++) {
-        cin >> arr[i];
+    for (int i=1;i<n;i++){
+        if (nums[i-1]>nums[i])
+        count++;
+        if (nums[n-1]>nums[0])
+        count++;
     }
-    qs(arr,0,n-1); 
+    return count<=1;
+ 
+ }
 
-    for(int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
+ int main() {
+    vector<int> nums = {3, 4, 5, 1, 2};  // example input
+
+    if (check(nums)) {
+        cout << "Yes, it is sorted and rotated" << endl;
+    } else {
+        cout << "No, it is NOT sorted and rotated" << endl;
     }
 
     return 0;
 }
+
+
+//int main() {
