@@ -118,9 +118,9 @@ bool check(vector<int>& nums) {
  }
 
  void leftrotate(int arr[],int n , int d){
-    reverse(arr,arr+d);
-    reverse(arr+d,arr+n);
-    reverse(arr,arr+n);
+    reverse(0,d-1);
+    reverse(d,n-1);
+    reverse(0,n-1);
  }
 
  int main() {
