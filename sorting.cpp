@@ -117,17 +117,26 @@ bool check(vector<int>& nums) {
  
  }
 
+ void leftrotate(int arr[],int n , int d){
+    reverse(arr,arr+d);
+    reverse(arr+d,arr+n);
+    reverse(arr,arr+n);
+ }
+
  int main() {
-    vector<int> nums = {2,1 ,3 ,4 };  // example input
-
-    if (check(nums)) {
-        cout << "Yes, it is sorted and rotated" << endl;
-    } else {
-        cout << "No, it is NOT sorted and rotated" << endl;
+    int n;
+    cin>>n;
+    int arr[n];
+    for (int i=0;i<n;i++){
+        cin>>arr[i];
     }
+    int d=3;
+    leftrotate(arr,n,d);
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
 
-    return 0;
-}
+    }
+ }
 
 
 //int main() {
