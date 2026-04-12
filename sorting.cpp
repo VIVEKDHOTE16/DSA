@@ -175,7 +175,7 @@ int findMaxConsecutiveOnes(vector<int>& nums) {
     return maxi;
 }
 
-int main() {̆
+int main() {
     int n;
     cin >> n;
 
