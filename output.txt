@@ -1,1 +1,1 @@
-Enter size of array: Enter elements: Missing number is: 6
+Missing number is: 11
