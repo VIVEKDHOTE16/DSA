@@ -145,20 +145,36 @@ public:
     } 
 };
 
- int main() {
-    int n;
-    cin>>n;
-    int arr[n];
-    for (int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    int d=3;
-    leftrotate(arr,n,d);
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+int missingNum(vector<int>& arr) {
+    int xor1 = 0, xor2 = 0;
+    int n = arr.size();
 
+    for(int i = 0; i < n; i++){
+        xor2 ^= arr[i];      // XOR of array
+        xor1 ^= (i + 1);     // XOR of 1 to n
     }
- }
+
+    xor1 ^= (n + 1);         // include last number
+
+    return xor1 ^ xor2;
+}
+
+int main() {
+    int n;
+    cout << "Enter size of array: ";
+    cin >> n;
+
+    vector<int> arr(n);
+    cout << "Enter elements: ";
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+
+    int result = missingNum(arr);
+    cout << "Missing number is: " << result << endl;
+
+    return 0;
+}
 
 
 //int main() {

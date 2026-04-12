@@ -1,1 +1,1 @@
-4 5 7 8 1 2 3 
+Enter size of array: Enter elements: Missing number is: 6
