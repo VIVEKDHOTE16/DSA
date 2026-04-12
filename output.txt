@@ -1,1 +1,1 @@
-Missing number is: 3
+Maximum consecutive 1s: 3

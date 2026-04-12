@@ -189,20 +189,3 @@ int main() {
 
     return 0;
 }
-//int main() {
-    int n;
-    cin >> n;
-
-    vector<int> arr(n);
-    for(int i = 0; i < n; i++){
-        cin >> arr[i];
-    }
-
-    int result = missingNum(arr);
-    cout << "Missing number is: " << result << endl;
-
-    return 0;
-}
-
-
-//int main() {
