@@ -1,1 +1,1 @@
-Maximum consecutive 1s: 2
+Maximum consecutive 1s: 1
